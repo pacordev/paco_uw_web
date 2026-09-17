@@ -62,3 +62,7 @@ npm run lint      # oxlint
 Needs the API running and reachable at `VITE_API_URL` (defaults to
 `http://localhost:8000`). Admin actions need the API's `ADMIN_API_KEY` value, pasted into
 the "Admin key" field on the Admin page.
+
+A deployed instance of the API is live at `https://underwriting-api-4ky9.onrender.com` —
+set `VITE_API_URL` to that instead of running the API locally, if you want to point this
+app at real deployed data. This frontend itself isn't deployed anywhere yet.
