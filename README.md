@@ -3,6 +3,14 @@
 A React front end for the underwriting rules-engine API — pick a product, answer its
 questions, get a decision, or manage the product catalog itself.
 
+## Deployment
+
+Live at **https://paco-uw-web.vercel.app** (Vercel), talking to the API at
+`https://underwriting-api-4ky9.onrender.com` (Render). `VITE_API_URL` is set to that
+Render URL in Vercel's project settings — Vite bakes it into the build at deploy time, so
+changing it means redeploying. The API's `ALLOWED_ORIGINS` includes this exact Vercel
+origin (no trailing slash — a browser's `Origin` header never has one).
+
 ## What it does
 
 **Quote console.** Pick a product from the catalog, answer its questions, submit them,
@@ -63,6 +71,6 @@ Needs the API running and reachable at `VITE_API_URL` (defaults to
 `http://localhost:8000`). Admin actions need the API's `ADMIN_API_KEY` value, pasted into
 the "Admin key" field on the Admin page.
 
-A deployed instance of the API is live at `https://underwriting-api-4ky9.onrender.com` —
-set `VITE_API_URL` to that instead of running the API locally, if you want to point this
-app at real deployed data. This frontend itself isn't deployed anywhere yet.
+Point `VITE_API_URL` at the deployed API (`https://underwriting-api-4ky9.onrender.com`)
+instead of running it locally, if you want this app to run against real deployed data —
+see "Deployment" above for the live version of both.
