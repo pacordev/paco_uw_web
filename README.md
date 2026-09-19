@@ -1,4 +1,4 @@
-# Paco's Binder — frontend
+# Insurance Underwriting Rules Engine — frontend
 
 A React front end for the underwriting rules-engine API — pick a product, answer its
 questions, get a decision, or manage the product catalog itself.

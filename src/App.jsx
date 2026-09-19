@@ -13,7 +13,7 @@ export default function App() {
       <div className="topbar">
         <div className="wordmark">
           <span className="mark">◆</span>
-          <span className="name">Paco's Binder</span>
+          <span className="name">Insurance Underwriting Rules Engine</span>
           <span className="tag">quote console</span>
         </div>
         {view === "console" && (
